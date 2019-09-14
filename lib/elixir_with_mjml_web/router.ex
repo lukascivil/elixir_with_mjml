@@ -23,6 +23,7 @@ defmodule ElixirWithMjmlWeb.Router do
     pipe_through :api
 
     get "/mjml", MjmlController, :index
+    post "/mjml", MjmlController, :compileMjml
   end
 
   # Other scopes may use custom stacks.
