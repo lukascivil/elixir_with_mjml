@@ -10,6 +10,8 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
+![alt tag](http://lukascivil.com.br/githubimages/elixir_with_mjml/diagram.png)
+
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
