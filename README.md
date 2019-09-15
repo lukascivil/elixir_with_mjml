@@ -25,7 +25,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 Post : localhost:4000/api/mjml
 ```json
 {
- "minify": true | false,
+ "minify": false,
  "mjml": "<mjml>...</mjml>"
 }
 ```
