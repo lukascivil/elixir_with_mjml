@@ -21,7 +21,7 @@ defmodule ElixirWithMjmlWeb.MjmlController do
 
   def compileMjml(conn, %{"mjmlTemplate" => mjmlTemplate}) when is_binary(mjmlTemplate) do
     with path <- :code.priv_dir(:elixir_with_mjml),
-      html <- :os.cmd(:"#{path}/mjml.sh '<mjml><mj-body><mj-section></mj-section></mj-body></mjml>'") |> IO.inspect do
+      html <- :os.cmd(:"#{path}/mjml.sh '#{mjmlTemplate}'") |> IO.inspect do
         render(conn, "index.json", message: sanitize(html))
     else
         _error -> raise "Error MJML exited with non zero status"
